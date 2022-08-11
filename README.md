@@ -8,19 +8,22 @@ para utilizrlo lo que tienes que hacer primero es modificar el .env de la siguie
 
 primero realizamos una copia del archivo env
 
-Dependencias>
+## Dependencias:
 mysql-connector-python==8.0.26
 python-dotenv==0.20.0
 
+### Copiamos el archivo .env
 
 ```bash
 cp .env.example .env
 ```
-instalamos las dependencias
+### instalamos las dependencias
 
 ```python
 pip install -r requirements.txt
 ```
+
+### Modificamos el archivo env
 
 ```env
 ###Database Server 2
@@ -46,6 +49,8 @@ TableToCheck = "" #tabla de la base de datos donde se haran las consultas
 ```
 
 luego ejecutamos el script de manera normal
+
+### Ejecutamos
 
 ```python
 python3 DB-data-Compare.py
